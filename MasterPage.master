@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/Controls/NextWaives.ascx" TagPrefix="uc1" TagName="NextWaives" %>
+<%@ Register Src="~/Controls/NextOrderPackages.ascx" TagPrefix="uc1" TagName="NextOrderPackages" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>JUINTI</title>
+
+    <link href="style/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/js/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/js/chosen/chosen.css" rel="stylesheet" />
+    <link href="style/style.min.css?v2" rel="stylesheet" />
+
+    <link href="style/print.css?v2" rel="stylesheet" media="print" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="/js/chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+    <script src="/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="style/gfx/icon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="style/gfx/icon32.png" sizes="32x32">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="sidemenu">
+
+            <asp:Literal runat="server" ID="litCaseMenu" />
+        </div>
+        <div id="pagewrap">
+            <header>
+                <div class="wapper">
+                    <div class="left-box column-6">
+                        <span class="fa-stack btn_open_menu">             
+                            <i class="fa fa-bars"></i>
+                        </span>
+                        <div class="selected_case">
+                            <span class="casenumber">
+                                <asp:Literal ID="litSelctedCaseNumber" runat="server" /></span>
+                            <span class="casetitle">
+                                <asp:Literal ID="litSelectedCaseName" runat="server" /></span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+
+                        <div class="dropdown_cases hide">
+                            <asp:Literal ID="litCaseDropdown" runat="server" />
+                        </div>
+                    </div>
+                    <div class="right-box column-6">
+                        <ul class="topmenu">
+                            <li>
+                                <asp:LinkButton ID="lnkMailLog" ToolTip="<%$ Resources:Global, BtnMailLog %>" runat="server"><i class="fa fa-envelope"></i></asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="lnkContacts" ToolTip="<%$ Resources:Global, BtnContacts %>" runat="server"><i class="fa fa-address-book"></i></asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="lnkHelp" ToolTip="<%$ Resources:Global, BtnHelp %>" runat="server"><i class="fa fa-question-circle"></i></asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="bntSignOut" ToolTip="<%$ Resources:Global, BtnSignOut %>" OnClick="bntSignOut_Click" runat="server"><i class="fa fa-sign-out"></i></asp:LinkButton></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </header>
+
+
+
+
+            <div class="content column-12">
+                <div class="boxwrap clearfix">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <%-- <div class="right column-3">
+                <div class="boxwrap">
+                    <div id="calTopRight"></div>
+                </div>
+                <uc1:NextWaives runat="server" ID="NextWaives" />
+                <uc1:NextOrderPackages runat="server" ID="NextOrderPackages" />
+            </div>--%>
+        </div>
+
+        <%--   <footer>
+                <div class="wapper">
+                    <span>JUINTI 1.0.0 <i class="fa fa-copyright"></i></span>
+                </div>
+            </footer>--%>
+        <div class="modal new case">
+            <span class="header">
+                <asp:Literal runat="server" Text="<%$ Resources:CaseTexts, ModalCreateCaseHeader %>" /></span>
+
+            <div class="row name">
+                <div class="label">
+                    <asp:Label runat="server" AssociatedControlID="txtCaseName" ID="lblCaseName" Text="<%$ Resources:CaseTexts, ModalLabelName %>" />
+                </div>
+                <div class="input">
+                    <asp:TextBox runat="server" ID="txtCaseName" />
+                </div>
+            </div>
+            <div class="row number">
+                <div class="label">
+                    <asp:Label runat="server" AssociatedControlID="txtCaseNumber" ID="lblCaseNumber" Text="<%$ Resources:CaseTexts, ModalLabelNumber %>" />
+                </div>
+                <div class="input">
+                    <asp:TextBox runat="server" ID="txtCaseNumber" />
+                </div>
+            </div>
+            <div class="row street">
+                <div class="label">
+                    <asp:Label runat="server" AssociatedControlID="txtCaseStreet" ID="lblCaseStreet" Text="<%$ Resources:CaseTexts, ModalLabelStreet %>" />
+                </div>
+                <div class="input">
+                    <asp:TextBox runat="server" ID="txtCaseStreet" />
+                </div>
+            </div>
+            <div class="row zipcode">
+                <div class="label">
+                    <asp:Label runat="server" AssociatedControlID="txtCaseZipCode" ID="lblCaseZipCode" Text="<%$ Resources:CaseTexts, ModalLabelZipCode %>" />
+                </div>
+                <div class="input">
+                    <asp:TextBox runat="server" ID="txtCaseZipCode" />
+                </div>
+            </div>
+            <div class="row city">
+                <div class="label">
+                    <asp:Label runat="server" AssociatedControlID="txtCaseCity" ID="lblCaseCity" Text="<%$ Resources:CaseTexts, ModalLabelCity %>" />
+                </div>
+                <div class="input">
+                    <asp:TextBox runat="server" ID="txtCaseCity" />
+                </div>
+            </div>
+            <div class="row country">
+                <div class="label">
+                    <asp:Label runat="server" AssociatedControlID="txtCaseCountry" ID="lblCaseCountry" Text="<%$ Resources:CaseTexts, ModalLabelCountry %>" />
+                </div>
+                <div class="input">
+                    <asp:TextBox runat="server" ID="txtCaseCountry" />
+
+                </div>
+            </div>
+            <div class="buttons">
+                <asp:Button runat="server" CssClass="btn ui-cancel modal_cancel" ID="Button2" Text="<%$ Resources:Global, BtnCancelText %>" />
+                <asp:Button ID="btnCreateCase" CssClass="btn ui-create" OnClick="btnCreateCase_Click" ValidationGroup="grpCreateCase" Text="<%$ Resources:CaseTexts, ModalBtnCreate %>" runat="server" />
+            </div>
+        </div>
+
+
+
+        <span class="fa-stack btn_open_buttons">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-ellipsis-v fa-stack-1x fa-inverse"></i>
+        </span>
+
+        <div class="modal bg_overlay"></div>
+    </form>
+</body>
+</html>

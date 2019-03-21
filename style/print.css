@@ -1,0 +1,8 @@
+﻿header, .sidemenu{
+    display:none;
+}
+#pagewrap {
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+}

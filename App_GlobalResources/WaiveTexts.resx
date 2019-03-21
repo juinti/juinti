@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CaseDeliveryAddress" xml:space="preserve">
+    <value>Leveringsadresse:</value>
+  </data>
+  <data name="CaseName" xml:space="preserve">
+    <value>Sagsnavn:</value>
+  </data>
+  <data name="CaseNumber" xml:space="preserve">
+    <value>Sagsnummer:</value>
+  </data>
+  <data name="ChooseMaterial" xml:space="preserve">
+    <value>-- Vælg Materiale --</value>
+  </data>
+  <data name="ExtraMaterials" xml:space="preserve">
+    <value>Ekstra materialer</value>
+  </data>
+  <data name="FilterContract" xml:space="preserve">
+    <value>Entreprise:</value>
+  </data>
+  <data name="FilterDateFrom" xml:space="preserve">
+    <value>Fra</value>
+  </data>
+  <data name="FilterDateTo" xml:space="preserve">
+    <value>Til</value>
+  </data>
+  <data name="FilterDeliveryDateRange" xml:space="preserve">
+    <value>Leveringsdato:</value>
+  </data>
+  <data name="FilterMilestone" xml:space="preserve">
+    <value>Milepæl:</value>
+  </data>
+  <data name="ListHeaderEstOrderDate" xml:space="preserve">
+    <value>Leveringsdato</value>
+  </data>
+  <data name="ListHeaderID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ListHeaderLocation" xml:space="preserve">
+    <value>Lokation</value>
+  </data>
+  <data name="ListHeaderMilestone" xml:space="preserve">
+    <value>Milepæl</value>
+  </data>
+  <data name="ListHeaderPrice" xml:space="preserve">
+    <value>Pris</value>
+  </data>
+  <data name="ListHeaderTitle" xml:space="preserve">
+    <value>Navn</value>
+  </data>
+  <data name="ModalAddEkstra" xml:space="preserve">
+    <value>Opret og tilføj materialer</value>
+  </data>
+  <data name="ModalAddExtraHeader" xml:space="preserve">
+    <value>Bestil Ekstra Materiale</value>
+  </data>
+  <data name="ModalAddMaterial" xml:space="preserve">
+    <value>Bestil Ekstra Materiale</value>
+  </data>
+  <data name="ModalAddPackage" xml:space="preserve">
+    <value>Tilføj Pakke</value>
+  </data>
+  <data name="ModalBtnAddPackage" xml:space="preserve">
+    <value>Tilføj</value>
+  </data>
+  <data name="ModalBtnCreate" xml:space="preserve">
+    <value>Opret og tilføj pakker</value>
+  </data>
+  <data name="ModalBtnDeleteWaive" xml:space="preserve">
+    <value>Slet</value>
+  </data>
+  <data name="ModalBtnEdit" xml:space="preserve">
+    <value>Redigér</value>
+  </data>
+  <data name="ModalBtnEditPackageAmount" xml:space="preserve">
+    <value>Gem</value>
+  </data>
+  <data name="ModalBtnProduction" xml:space="preserve">
+    <value>Godkend</value>
+  </data>
+  <data name="ModalBtnRemovePackage" xml:space="preserve">
+    <value>Fjern</value>
+  </data>
+  <data name="ModalBtnRemoveProduction" xml:space="preserve">
+    <value>Fjern fra produktion</value>
+  </data>
+  <data name="ModalBtnSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ModalBtnValidate" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ModalCreateWaiveHeader" xml:space="preserve">
+    <value>Opret Afkald</value>
+  </data>
+  <data name="ModalDeleteWaive" xml:space="preserve">
+    <value>Slet afkald?</value>
+  </data>
+  <data name="ModalEditPackageAmount" xml:space="preserve">
+    <value>Ændr antal</value>
+  </data>
+  <data name="ModalEditPackageWeeks" xml:space="preserve">
+    <value>Ændr Produktionstid (uger)</value>
+  </data>
+  <data name="ModalLabelAmount" xml:space="preserve">
+    <value>Antal</value>
+  </data>
+  <data name="ModalLabelDeliveryDate" xml:space="preserve">
+    <value>Leveringsdato</value>
+  </data>
+  <data name="ModalLabelEstDeliveryDate" xml:space="preserve">
+    <value>Forventet leveringsdato:</value>
+  </data>
+  <data name="ModalLabelLocation" xml:space="preserve">
+    <value>Lokation</value>
+  </data>
+  <data name="ModalLabelMaterial" xml:space="preserve">
+    <value>Materiale</value>
+  </data>
+  <data name="ModalLabelMessage" xml:space="preserve">
+    <value>Intern besked</value>
+  </data>
+  <data name="ModalLabelMilestone" xml:space="preserve">
+    <value>Milepæl</value>
+  </data>
+  <data name="ModalLabelProductionWeeks" xml:space="preserve">
+    <value>Produktionstid (uger)</value>
+  </data>
+  <data name="ModalLabelTitle" xml:space="preserve">
+    <value>Navn</value>
+  </data>
+  <data name="ModalLabelWaiveActivity" xml:space="preserve">
+    <value>Arbejde</value>
+  </data>
+  <data name="ModalLabelWaiveContract" xml:space="preserve">
+    <value>Entreprise</value>
+  </data>
+  <data name="ModalLabelWaivePackage" xml:space="preserve">
+    <value>Pakke</value>
+  </data>
+  <data name="ModalLabelWeeksFromMilestoneStart" xml:space="preserve">
+    <value>Uger fra milepæl start</value>
+  </data>
+  <data name="ModalRemovePackage" xml:space="preserve">
+    <value>Fjern</value>
+  </data>
+  <data name="ModalRemovePackageText" xml:space="preserve">
+    <value>Sikker på du ønsker at fjerne pakken?</value>
+  </data>
+  <data name="NextOrderPackagesBoxHeader" xml:space="preserve">
+    <value>Rettefrist</value>
+  </data>
+  <data name="NextWaivesBoxHeader" xml:space="preserve">
+    <value>Næste Afkald</value>
+  </data>
+  <data name="PackageAmount" xml:space="preserve">
+    <value>Stk.</value>
+  </data>
+  <data name="PackageAmountSuffix" xml:space="preserve">
+    <value>Stk.</value>
+  </data>
+  <data name="Stock" xml:space="preserve">
+    <value>Lager</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Pris i alt</value>
+  </data>
+  <data name="Waive" xml:space="preserve">
+    <value>Afkald</value>
+  </data>
+  <data name="Waives" xml:space="preserve">
+    <value>Afkald</value>
+  </data>
+</root>

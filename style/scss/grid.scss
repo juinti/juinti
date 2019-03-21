@@ -1,0 +1,41 @@
+﻿// <reference path="variables.scss" />
+/// <reference path="mixins.scss" />
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    @include border-box;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+
+.wrapper {
+    max-width: $grid-max-width;
+    margin: 0 auto;
+}
+
+.wrapper, .row {
+    @extend %clearfix;
+}
+
+[class*='column-'] {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+}
+
+@include breakpoint($breakpoint-tablet) {
+    .wrapper {
+        width: 95%;
+    }
+
+    @for $i from 1 through $grid-columns {
+        .column-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+﻿body {
+    background: #2c273c;
+    padding-top: 40px;
+    font-family: Arial;
+}
+
+.bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: url(gfx/juinti-forside.jpg) top center no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+    top: 0;
+}
+
+.logo {
+    margin: auto;
+    width: 185px;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+    .logo img {
+        max-width: 185px;
+    }
+
+.login-box {
+    overflow: hidden;
+    margin: auto;
+    width: 300px;
+    max-width: 90%;
+    padding: 20px;
+    position: absolute;
+    z-index: 99999;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+input[type="text"], input[type="password"] {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+    input[type="text"]:-webkit-autofill, input[type="password"]:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+    }
+
+.btnlogin, .btnforgot {
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.25;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.btnlogin {
+    float: right;
+    background: #039be5;
+    color: #fff;
+    transition: .2s all ease-out;
+    opacity: 0.85;
+}
+
+    .btnlogin:hover {
+        background: #1193cb;
+    }
+
+.btnforgot {
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+    .btnforgot:hover {
+        text-decoration: underline;
+    }
+
+@media screen and (max-width: 480px) {
+    input {
+        height: 42px;
+    }
+}

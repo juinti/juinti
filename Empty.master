@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Empty.master.cs" Inherits="Empty" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>JUINTI</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/js/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link href="style/login.css" rel="stylesheet" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="style/gfx/icon16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="style/gfx/icon32.png" sizes="32x32">
+</head>
+<body>
+  
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+      <div class="bg"></div>
+</body>
+</html>
